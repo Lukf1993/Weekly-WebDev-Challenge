@@ -1,0 +1,136 @@
+.blog {
+    padding: 0 0  11.5rem 0;
+    background-color: $heliotrope;
+
+    .title{
+        align-items: center;
+        font-size: $size-xxxxl;
+    }
+    .text {
+        text-align: center;
+        padding: 5rem 0;
+        max-width: 57rem;
+        margin: 0 auto;
+    }
+    .flex {
+        flex-direction: column;
+        align-items: center;
+    }
+    &__photos {
+        margin: 0 auto;
+        color: $color-lightest;
+        &--img {
+            height: 31rem;
+            width: 90%;
+            max-width: 37rem;
+        }
+        &--img:first-child {
+            background-image: url(../../src/img/kiwidrink.jpg);
+            background-repeat: no-repeat;
+        }
+        &--img:nth-child(2) {
+            background-image: url(../../src/img/zielonazupa.jpg);
+            background-repeat: no-repeat;
+        }
+        &--img:last-child {
+            background-image: url(../../src/img/koszykmalin.jpg);
+            background-repeat: no-repeat;
+        }
+        &--margin {
+            margin: 1.5rem;
+        }
+        &--shadow {
+            box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.75);
+            position: relative;
+            &:before {
+                content: "";
+                background: transparent;
+                background: -webkit-linear-gradient(top, transparent, #000000);
+                background: -moz-linear-gradient(top, transparent, #000000);
+                background: linear-gradient(to bottom, transparent, #000000);
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                top: 50%;
+            }
+        }
+        .blog--data {
+            height: 6rem;
+            width: 6rem;
+            background-color: rgba(0,0,0,0.5);
+            border-radius: 10%;
+            position: absolute;
+            top: 3.1rem;
+            left: 3rem;
+            font-weight: bold;
+            p {
+                text-align: center;
+                line-height: 3rem;
+            }
+            p:first-child {
+                font-size: $size-xl;
+            }
+            p:last-child {
+                font-size: $size-lg;
+            }
+        }
+        .blog--title{
+            font-weight: bold;
+            font-size: 20px;
+            padding: 0 4rem 0 2rem;
+            position: absolute;
+            top: 66%;
+            line-height: 2.5rem
+        }
+        .blog--text {
+            position: absolute;
+            bottom: 0;
+            padding: 2rem; 
+            font-size: 13px;
+        }
+    }
+    .btn {
+        margin: 3.5rem auto;
+    }
+}
+@include breakpoint-min(sm){
+    .blog {
+        &__photos {
+            &--img {
+                width: 37rem;
+            }
+        }
+    }
+}
+@include breakpoint-min(lg){
+    .blog {
+        &__photos {
+            &--margin {
+                flex: 1;
+            }
+        }
+        .flex {
+            flex-direction: row;
+        }
+    }
+}
+@include breakpoint-min(xl){
+    .blog {
+        padding: 0px 0 8.5rem 0;
+        &__photos {
+            max-width: 120rem;
+         }
+         .title {
+            font-size: $size-superxxl;
+            &--center {
+                padding: 8rem 0 0;
+            }
+         }
+         .text {
+            padding: 0 0 3rem;
+            line-height: 2.5rem;
+         }
+         
+    }
+}

@@ -1,0 +1,81 @@
+
+    .subcribe {
+        background-position: 50% 100%;
+        background-image: url('../../dist/poziomkisubskrybcja.68b7df32.jpg');
+        padding: 5rem 0;
+        .title {
+            color: $color-darkest;
+            font-size: $size-xxl;
+            width: 80%;
+            margin: 0 auto;
+        }
+        .text {
+            max-width: 80%;
+            margin: 6rem auto 6rem 10%;
+        }
+        .flex {
+            justify-content: center;
+            margin: 0 10%;
+            flex-direction: column;
+        }
+        &__input {
+            width: 100%;
+            outline: auto;
+            height: 5.5rem;
+            font-size: $size-xs;
+            display: flex;
+            justify-content: center;
+            color: grey;
+        }
+        .btn {
+            margin: 2rem auto;
+        }
+    }
+@include breakpoint-min(md){
+    .subcribe {
+        .text {
+            max-width: 50%;
+        }
+        .flex {
+            flex-direction: row;
+        }
+        .btn {
+            margin: 0 3rem ;
+        }
+    }
+}
+@include breakpoint-min(xl){
+    .subcribe {
+        background-repeat: no-repeat;
+        padding: 0;
+        .width-size {
+            flex: 1;
+            padding: 12rem 16.5rem 13.7rem;
+        }
+        .title{
+            margin: 1rem 0;
+            letter-spacing: 2px;
+        }
+        .flex {
+            justify-content: flex-start;
+            margin: 0;
+        }
+        .text {
+            max-width: 57rem;
+            margin: 0;
+        }
+        .flex {
+            margin: 3rem 0;
+        }
+        .btn {
+            width: 17rem;
+            margin: 0 0 0 3rem;
+        }
+        &__input {
+            width: 57rem;
+            display: inline-block;
+            padding: 0 0 0 1.5rem;
+        }
+
+    }
+}

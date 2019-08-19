@@ -1,0 +1,63 @@
+// ==========================================================================
+// Colors
+// ==========================================================================
+$color-primary: #00c4c4 !default;
+$color-secondary: #3d9970 !default;
+$color-tertiary: #f72b3b !default;
+$color-lightest: #ffffff !default;
+$color-lighter: #f2f2f2 !default;
+$color-light: #e0e0e0 !default;
+$color-medium: #a4a4a4 !default;
+$color-dark: #6e6e6e !default;
+$color-darker: #444444 !default;
+$color-darkest: #262626 !default;
+$outrageous-orange: #FF6033 !default;
+$bondi-blue: #00B0B0 !default;
+$bright-sun: #FFE92F !default;
+$horizon: #5585a2 !default;
+$atlantis: #96b92c !default;
+$heliotrope: #b07cf7 !default;
+
+// Base Colors
+$base-color: $color-darker !default;
+$base-color-inverse: $color-lighter !default;
+$base-color-bg: $color-lightest !default;
+
+// Link Colors
+$link-color: $color-primary !default;
+$link-hover-color: darken($link-color, 15%) !default;
+
+// ==========================================================================
+// Typography
+// ==========================================================================
+$font-family-primary:  'Raleway', sans-serif !default;
+$font-family-secondary: 'Pacifico', cursive !default;
+$font-family-monospace: "Lucida Console", Courier, monospace !default;
+
+// Font Sizes
+$size-xxxs: 10px !default;
+$size-xxs: 12px !default;
+$size-xs: 14px !default;
+$size-sm: 17px !default;
+$size-md: 18px !default;
+$size-lg: 20px !default;
+$size-xl: 32px !default;
+$size-xxl: 40px !default;
+$size-xxxl: 48px !default;
+$size-xxxxl: 60px !default;
+$size-superxxl: 90px !default;
+$size-base: $size-sm !default;
+
+// ==========================================================================
+// Media Query Breakpoints
+// ==========================================================================
+
+$breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px,
+  xxxl: 1600px
+) !default;

@@ -1,0 +1,102 @@
+.contact {
+    background-image: url('./../../src/img/footer.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: 50% 50%;
+    .width-size {
+        flex-direction: column;
+    }
+    .title {
+        font-size: $size-xxxxl;
+    }
+    .text {
+        max-width: 90%;
+        margin: 0 auto;
+        color: $color-darkest;
+    }
+    &__message {
+        input {
+            height: 5rem;
+            max-height: 5rem;
+            width: 80%;
+            border: none;
+            opacity: 0.5;
+            background-color: $color-primary;
+            color: $color-lighter;
+            margin: 1rem auto;
+            border-left: 5px solid $color-primary;
+            padding: 0 0 0 1.5rem;
+            &:focus {
+                opacity: 1;
+                outline: none;
+                border-left: 5px solid #355b82; 
+            }
+        }
+        input:last-child {
+            padding: 2rem 0 23rem 1.5rem;
+        }
+        input::placeholder {
+            color: $color-lighter;
+        } 
+    }
+    &__info {
+        color: $color-darkest;
+        font-size: $size-lg;
+        text-shadow: 0 1px #fff;
+        width: 50%;
+        margin: 2rem auto;
+        text-align: center;
+        h3 {
+            font-weight: bold;
+            font-size: $size-sm;
+        }
+        .contact__element--padding {
+            padding: 0 0 0.5rem 0;
+        }
+    }
+}
+@include breakpoint-min(md){
+    .contact {
+        .title {
+            font-size: $size-superxxl;
+        }
+        .width-size {
+            flex-direction: row;
+        }
+        &__message {
+            width: 50%;
+        }
+        &__info {
+            widows: 50%;
+            text-align: left;
+        }
+    }
+}
+@include breakpoint-min(xl){
+.contact {
+    max-height: 100%;
+    width: 100%;
+    padding: 0 0 7rem 0;
+    .text {
+        max-width: 37rem;
+    }
+    .title {
+        &--center {
+            padding: 8rem 0 0;
+        }
+    }
+    &__message {
+        padding: 2.5rem 8.5rem 5rem 16.5rem;
+        input {
+            width: 50rem;
+            max-width: 50rem;
+            margin: 1.5rem 0 0 0;
+        }
+    }
+    &__info {
+        text-align: left;
+        margin: 0;
+        padding: 3.5rem 0 5rem 8.5rem;
+    }
+}
+}

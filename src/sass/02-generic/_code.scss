@@ -1,0 +1,11 @@
+// ==========================================================================
+// Code
+// ==========================================================================
+
+code {
+  font-family: $font-family-monospace;
+  font-size: inherit;
+  color: $color-primary;
+  background-color: $color-lighter;
+  padding: rem(2px) rem(4px);
+}

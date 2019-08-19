@@ -1,0 +1,45 @@
+// ==========================================================================
+// Standalone Typography Modifiers
+// ==========================================================================
+
+.type {
+  &-italic {
+    font-style: italic;
+  }
+
+  &-bold {
+    font-weight: 700;
+  }
+
+  &-black {
+    font-weight: 900;
+  }
+
+  &-small {
+    font-size: 0.7em;
+  }
+
+  &-caps {
+    font-variant: small-caps;
+  }
+
+  &-uppercase {
+    text-transform: uppercase;
+  }
+
+  &-justify {
+    text-align: justify;
+  }
+
+  &-left {
+    text-align: left;
+  }
+
+  &-right {
+    text-align: right;
+  }
+
+  &-center {
+    text-align: center;
+  }
+}

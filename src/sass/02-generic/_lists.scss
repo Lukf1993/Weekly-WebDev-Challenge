@@ -1,0 +1,35 @@
+// ==========================================================================
+// Lists
+// ==========================================================================
+$list-padding: 0 !default;
+$list-margin: 0 !default;
+$unordered-list-style: circle inside !default;
+$ordered-list-style: decimal inside !default;
+
+ul,
+ol {
+  margin: $list-margin;
+  padding: $list-padding;
+}
+
+ul {
+  list-style: $unordered-list-style;
+}
+
+ol {
+  list-style: $ordered-list-style;
+}
+
+li {
+  display: list-item;
+  margin-bottom: 8px;
+}
+
+dl {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+dd {
+  margin-left: 0;
+}

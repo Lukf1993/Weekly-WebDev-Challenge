@@ -1,0 +1,25 @@
+.footer{
+    height: 9rem;
+    background: #262626;
+    .title {
+        font-size: 2.5rem;
+        font-family: $font-family-secondary
+    }
+    .flex__item{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    b {
+        color: #ea2a52;
+        padding: 0 0.5rem;
+    }
+}
+@include breakpoint-min(md) {
+    .footer {
+        .flex__item {
+            flex-direction: row;
+        }
+    }
+}

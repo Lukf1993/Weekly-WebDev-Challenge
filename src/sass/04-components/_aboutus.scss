@@ -1,0 +1,73 @@
+.about-us {
+    background-color: $bondi-blue;
+    padding: 0 0 5rem 0;
+    &__img {
+        padding: 7rem;
+        margin: 0 auto;
+    }
+    .width-size{
+        flex-direction: column;
+    }
+    .title {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: $size-xxxxl
+    }
+    .text {
+        max-width: 90%;
+        margin: 0 auto;
+        text-align: center;
+
+    }
+}
+@include breakpoint-min(lg) {
+    .about-us {
+        padding: 4rem;
+        &__img {
+            padding: 7rem 0 7rem 7rem;
+        }
+        .width-size{
+            .flex__item {
+                display: flex;
+                flex-direction: column;
+                flex: 1;
+                // margin: 
+            }
+        }
+        .title {
+             display: block;
+             margin: 12rem auto 0;
+             font-size: $size-superxxl;
+            }
+        .text { 
+            max-width: 100%;
+            margin: 0.5rem auto;
+         }
+    }
+}
+@include breakpoint-min(xl) {
+    .about-us {
+        padding: 0;
+        .width-size{
+            flex-direction: row;}
+        .title{
+            max-width: 50rem;
+            margin: 16rem 0 0rem 9.5rem;
+        }
+        .text{
+            max-width: 50rem;
+            text-align: left;
+            margin: 0.5rem 0 -2rem 9.5rem;
+        }
+    }
+    @include breakpoint-min(xxl) {
+        .about-us {
+            &__img {
+                margin: 0;
+                padding: 7rem 0 7rem 17rem;
+            }
+            
+        }
+    }
+}

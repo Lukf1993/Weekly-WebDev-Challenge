@@ -1,0 +1,38 @@
+.btn {
+    width: 20rem;
+    height: 5.6rem;
+    font-size: $size-lg;
+    font-weight: 200;
+    display: block;
+    text-align: center;
+    line-height: 5.5rem;
+    justify-content: center;
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.75);
+    color: $color-lightest;
+    &--orange {
+        background-color: $outrageous-orange;
+    }
+    &--white {
+        background-color: $color-lightest;
+    }
+    &--horizon {
+        background-color: $horizon;
+    }
+    &--atlantis {
+        background-color: $atlantis;
+    }
+    &--red {
+        background-color: $color-tertiary;
+    }
+    &--center {
+        margin: 0 auto;
+    }
+}
+.overflow {
+    overflow-y: hidden;
+}
+@include breakpoint-min(sm){
+    .overflow {
+      overflow-y: scroll;
+    }
+  }

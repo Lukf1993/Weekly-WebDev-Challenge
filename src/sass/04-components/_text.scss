@@ -1,0 +1,24 @@
+.text {
+    font-size: $size-sm;
+    font-weight: 200;
+    &--white {
+        color: $color-lighter;
+    }
+    &--center {
+        text-align: center;
+    }
+
+}
+.title {
+    font-size: $size-superxxl;
+    font-weight: bold;
+    color: $color-lighter;
+    &--black {
+        color: $color-darkest;
+    }
+    &--center {
+        text-align: center;
+        padding: 7rem 0 0 0;
+    }
+}
+
